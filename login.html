@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    
+  </head>
+  
+  <style> 
+
+    /*  Positioning login  form */
+    body{
+      background:url("hd3.jpg");
+      background-size: cover;
+    }
+.Q {
+  top: 15%;
+  left: 50%;
+  height:300px;
+  
+  border:none !important;
+      color: azure;
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+  padding: 60px 50px 30px 50px;
+  /* background-color: transparent; */
+  
+  border-radius: 10px;
+  background-color: transparent;
+ 
+}
+/* username and password buttons */
+#name {
+  outline: none;
+  /* background: transparent; */
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+  top:80px;
+  
+}
+/* submit button */
+#button {
+  border: 15px;
+  padding: 6px 10px;
+  margin-top: 25px;
+  outline: none;
+  margin-left: 75px;
+  border-radius: 50px;
+  background: green;
+  position: relative;
+  top:90px;
+}
+/* Forget password?-text */
+a {
+  font-size: 15px;
+  color: blue;
+  position: relative;
+  top:79px;
+  left:10px;
+}
+/* while mouse hover on submit button */
+#button:hover {
+  color: rgb(1, 1, 1);
+  cursor: pointer;
+}
+
+  </style>
+  <body>
+    <!--  div for overall body -->
+    <div class="Q">
+      <!-- onsubmit event -->
+      <form name="E" action="bharuproject.html" onsubmit="return login()">
+        <input type="text" placeholder="username" name="R" id="name" /><br />
+        <input
+          type="password"
+          placeholder="password"
+          name="T"
+          id="name"
+        /><br />
+        <a href="">Forget password?</a><br />
+        <button id="button">Submit</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+  <!-- java script start -->
+  <script>
+function login() {
+  var name = document.E.R.value;
+  var pass = document.E.T.value;
+  if (name == "spices" && pass == "123") {
+    return true;
+  } else if (name != "sakthi" && pass == "priya") {
+    alert("Enter valid name");
+    return false;
+  } else {
+    alert("Enter valid password");
+    return false;
+  }
+}
+</script>
+</html>
+
+
+
+
+
